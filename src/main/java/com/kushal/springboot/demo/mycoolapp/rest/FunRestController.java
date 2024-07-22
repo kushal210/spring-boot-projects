@@ -10,6 +10,6 @@ public class FunRestController {
     // Expose a '/' endpoint
     @GetMapping("/")
     public String sayHello(){
-        return Hello;
+        return "Hello";
     }
 }
