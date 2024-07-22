@@ -7,15 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FunRestController {
 
-    @Value("${coach.name}")
-    private String coachName;
-
-    @Value("${team.name}")
-    private String teamName;
-
     // Expose a '/' endpoint
     @GetMapping("/")
     public String sayHello(){
-        return teamName + coachName;
+        return Hello;
     }
 }
