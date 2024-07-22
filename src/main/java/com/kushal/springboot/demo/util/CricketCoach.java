@@ -1,4 +1,4 @@
-package com.kushal.springboot.demo.mycoolapp;
+package com.kushal.springboot.demo.util;
 
 import org.springframework.stereotype.Component;
 
