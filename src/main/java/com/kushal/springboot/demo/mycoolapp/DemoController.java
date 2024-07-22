@@ -2,6 +2,7 @@ package com.kushal.springboot.demo.mycoolapp;
 
 import com.kushal.springboot.demo.util.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,8 +12,9 @@ public class DemoController {
 
     // This is CONSTRUCTOR INJECTION.
     // In case of single-constructor, @Autowired is optional.
+    // When multiple bean qualifies for Injection, then we can specify the bean to be injected using the @Qualifier annotation by mentioning the bean-name.
     @Autowired
-    public DemoController(Coach coach){
+    public DemoController(@Qualifier("tennisCoach") Coach coach){
         myCoach = coach;
     }
 
