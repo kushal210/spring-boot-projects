@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = {
 		"com.kushal.springboot.demo.mycoolapp",
-		"com.kushal.springboot.demo.util"
+		"com.kushal.springboot.demo.util",
+		"com.kushal.springboot.demo.config"
 })
 public class MycoolappApplication {
 
