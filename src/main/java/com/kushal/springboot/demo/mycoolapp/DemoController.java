@@ -22,7 +22,7 @@ public class DemoController {
 
     @Autowired
     public DemoController(@Qualifier("cricketCoach") Coach coach,
-                          @Qualifier("aquatic") Coach theAnotherCoach){
+                          @Qualifier("cricketCoach") Coach theAnotherCoach){
         myCoach = coach;
         anotherCoach = theAnotherCoach;
     }
