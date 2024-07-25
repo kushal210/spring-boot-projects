@@ -4,4 +4,5 @@ import com.kushal.springboot.demo.mycoolapp.entity.Student;
 
 public interface StudentDAO {
     void save(Student student);
+    Student findById(Integer id);
 }

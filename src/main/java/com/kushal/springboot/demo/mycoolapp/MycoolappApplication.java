@@ -19,7 +19,8 @@ public class MycoolappApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return runner -> {
-			createStudent(studentDAO);
+//			createStudent(studentDAO);
+			readStudent(studentDAO);
 		};
 	}
 
@@ -27,6 +28,12 @@ public class MycoolappApplication {
 		Student student = new Student("Kushal", "Kumar", "kushal@dtu.ac.in");
 		studentDAO.save(student);
 		System.out.println("Saved Student id: " + student.getId());
+	}
+	private Student readStudent(StudentDAO studentDAO){
+		Student student = studentDAO.findById(3);
+		System.out.println("Fetching student with id=3: " + student);
+		System.out.println("Fetching a student with a non existent id: " + studentDAO.findById(23));
+		return student;
 	}
 
 }
