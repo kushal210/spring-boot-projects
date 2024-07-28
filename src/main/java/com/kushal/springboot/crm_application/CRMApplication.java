@@ -1,13 +1,13 @@
-package com.kushal.springboot.demo.mycoolapp;
+package com.kushal.springboot.crm_application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MycoolappApplication {
+public class CRMApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MycoolappApplication.class, args);
+		SpringApplication.run(CRMApplication.class, args);
 	}
 
 }

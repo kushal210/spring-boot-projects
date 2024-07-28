@@ -1,10 +1,10 @@
-package com.kushal.springboot.demo.mycoolapp;
+package com.kushal.springboot.crm_application;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MycoolappApplicationTests {
+class CRMApplicationTests {
 
 	@Test
 	void contextLoads() {
